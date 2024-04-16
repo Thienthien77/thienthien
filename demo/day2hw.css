@@ -62,19 +62,11 @@ header ul li {
 }
 .photo-img-galery-container {
     display: grid;
-    grid-template-rows: auto;
-    grid-gap: 120px;
-    width: 80%;
-    height: 200px;
-    margin: 0 auto;
+     grid-template-columns: 1fr 1fr;
+     gap: 10px;
+     width: 80%;
+     margin: 0 auto;
 }
-.photo-img-galery-2{
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-gap: 10px;
-}
-
-.photo-img-galery-text{
-    text-align: center;
-    font-size: 30px;
+p {
+text-align: center;
 }
