@@ -20,15 +20,15 @@ header{
     gap: 10px;
     height: 300px; 
 }
-.box2-larger{
-    background-color: #ffffff;
+.box2-larger{ 
     display: grid;
     row-gap: 10px;
 }
 .box2-small {
   display: grid;
   row-gap: 10px;
-  background-color: #ffffff;
+  grid-template-rows: repeat(4,1fr);
+  
 }
 
 .box4a{
