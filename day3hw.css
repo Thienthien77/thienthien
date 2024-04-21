@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+header {
+    background-color: rgb(63, 61, 61);
+    color: aliceblue;
+    display: flex;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content:space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    }
+li {
+    list-style: none;
+}
+header ul {
+    display: flex;
+}
+main {
+    .container1 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    } 
+    .left {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        gap: 10px;
+        .left-top {
+            background-color: blanchedalmond;
+
+        }
+        .content {
+            position: absolute;
+            display: inline;
+            color: aliceblue;
+        }
+        }
+        .left-bottom {
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px
+            }
+            h4 {
+                position: absolute;
+                display: inline;
+            }
+        }
+    .right {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        gap: 10px;
+        .right-top {
+            background-color: blanchedalmond;
+        }
+            .content {
+                position: absolute;
+            }
+        }
+        .right-bottom {
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }  
+    .container2 {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        min-height: 300px;
+        .left2 {
+            .left-top2 {             
+            }
+            .cat3 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 30px;
+
+            }
+            }            
+        .right2 {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            gap: 30px;
+            .right-top2 {
+                background-color: rgb(255, 255, 255);
+                padding: 20px;
+                margin-top: 30px;
+                border: 1px solid rgb(136, 134, 134);
+                h1 {
+                    display: inline;
+                    border-bottom: 2px solid rgb(5, 5, 5);
+                }
+                .stay {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                    margin-top: 30px;
+                    .box {
+                        text-align: center;
+                        i {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .right-bottom {
+                background-color: blue;
+            }
+        }
+    }
