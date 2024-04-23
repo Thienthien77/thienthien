@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        width: 60%;
+        height: 80%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+
+        h1 {
+            text-align: center;
+            &:hover {
+                color: red;
+            }
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+
+            .form-group {
+                margin-bottom: 10px;
+                position: relative;
+                i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 20px;
+                    animation: icon 5s infinite 2s alternate;
+                }
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    outline: none;
+                }
+
+                select {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    outline: none;
+                }
+
+                input[type="checkbox"] {
+                    width: auto;
+                    margin-left: 15px;
+                }
+                input[type="radio"] {
+                    width: auto;
+                    margin-left: 15px;
+                }
+                input[type="file"] {
+                    width: auto;
+                }
+
+            }
+
+
+        }
+
+        textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .link {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+            button {
+                padding: 10px;
+                border-radius: 10px;          
+                &:hover {
+                    animation: my 5s infinite  alternate;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes my {
+    from {
+        transform: rotate(0deg);
+        background-color: darkgreen;
+        color: white;
+    }
+    to{
+        transform: rotate(360deg);
+        background-color: red;
+        color: chartreuse;
+    }
+}
+
+@keyframes icon {
+   from {
+       left: 10px;
+       color: red;
+    }
+    to {
+       left: calc(100% - 30px);
+       color: blue;
+    }
+}
+
+
