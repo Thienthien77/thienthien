@@ -21,10 +21,11 @@ body {
     form {
         width: 60%;
         height: 80%;
-        background-color: white;
         border-radius: 10px;
-        padding: 15px;
-
+        padding: 15px 80px;
+        border-top-left-radius: 80px 50%;
+        border-bottom-left-radius: 80px 50%;
+        background-image: linear-gradient(to right,rgb(3, 160, 239),rgb(10, 228, 239));
         h1 {
             text-align: center;
             &:hover {
