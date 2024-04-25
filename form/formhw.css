@@ -22,10 +22,60 @@ body {
             grid-template-columns: 1fr 1fr;
             width: 60%;
             height: 80%;
-            background-color: aliceblue;
+            background-color: rgb(255, 255, 255);
             border-radius: 10px;
-            .box-img {
+            img {
+                border-radius: 10px;
+            }
+            h2 {
+                margin: 30px 30px;
+                color: rgb(0, 0, 0);
+            }
+            .form-group {
+                padding: 1px 50px;
+                margin-bottom: 10px;
+                position: relative;
+                i {
+                    position: absolute;
+                }
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 30px;
+                    border: 1px solid #ccc;
+                    outline: none;
+                }
+            }
+            .link1 {
+                width: 80%;
+                padding: 10px;
+                border-radius: 30px;
+                text-align: center;
+                margin: 0 auto;
+                border: 1px solid #ccc;
+                background-color: blue;
+                color: aliceblue;
+            }
+            h5 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .link2 {
+                display: flex;
+                justify-content: space-evenly;        
+                button {
+                    background-color: blue;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 5px 5px;
+                }
+            }
+            hr {
+                margin-top: 30px;
+                width: 100%;
+            }              
             }
             }
+            }
+    
         }
-    }
