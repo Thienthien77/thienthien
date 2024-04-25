@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    height: 5vh;
+    background-color: blue;
+}
+.container {
+    display: grid;
+    height: 95vh;
+}
+.header {
+    grid-area: h;
+    background-color: aqua;
+}
+.feature1 {
+    grid-area: f1;
+    background-color: yellow;
+}
+.feature2 {
+    grid-area: f2;
+    background-color: red;
+}
+.feature3 {
+    grid-area: f3;
+    background-color: violet;
+}
+.signup {
+    grid-area: s;
+    background-color: green;
+}
+.content {
+    grid-area: c;
+    background-color:azure;
+}
+
+/* laptop */
+ @media screen and (min-width: 1025px){
+     .container {
+        grid-template-areas:
+        "h h h"
+        "h h h"
+        "f1 f2 f3"
+        "f1 f2 f3"
+        "s s s"
+        "c c c"
+        "c c c"   
+        ;
+     }
+ }
+
+ /* tablet */
+ @media screen and (min-width: 741px) and (max-width: 1024px){
+   
+    .container {
+        grid-template-areas:
+        "h h"
+        "h h"
+        "c c"
+        "c c"   
+        "s f1"
+        "f2 f3"
+        ;
+     }
+ }
+
+ /* mobile */
+ @media screen and (max-width: 740px){
+    .container {
+        grid-template-areas:
+        "h"
+        "c"
+        "c"   
+        "s"
+        "f1"
+        "f2"
+        "f3"
+        ;
+     }
+ }
