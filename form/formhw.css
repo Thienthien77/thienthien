@@ -7,6 +7,9 @@ img {
     height: 100%;
     width: 100%;
 }
+a {
+    text-decoration: none;
+}
 body {
     main {
         background-image: url(https://i.pinimg.com/236x/32/90/aa/3290aac1e1e71b10b53f17d4f76dbe32.jpg);
@@ -15,8 +18,9 @@ body {
         height: 100vh;
         display: flex;
         justify-content: center;
-        text-align: center;
+        align-items: center;
         padding: 30px 50px;
+        text-align: center;
         .form {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -24,8 +28,12 @@ body {
             height: 80%;
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
+            .container2 {
+                padding: 10px;
+            }
             img {
-                border-radius: 10px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
             }
             h2 {
                 margin: 30px 30px;
@@ -37,6 +45,8 @@ body {
                 position: relative;
                 i {
                     position: absolute;
+                    right: 60px;
+                    transform: translateY(50%);
                 }
                 input {
                     width: 100%;
@@ -63,14 +73,26 @@ body {
             .link2 {
                 display: flex;
                 justify-content: space-evenly;        
-                button {
+                button:nth-child(1)  {
                     background-color: blue;
                     color: white;
                     border-radius: 5px;
                     padding: 5px 5px;
-                }
+                  }
+                  button:nth-child(2)  {
+                    background-color: red;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 5px 5px;
+                  } 
+                  button:nth-child(3)  {
+                    background-color: violet;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 5px 5px;
+                  }     
             }
-            hr {
+            hr { 
                 margin-top: 30px;
                 width: 100%;
             }              
@@ -78,3 +100,4 @@ body {
             }
             }
     
+      
