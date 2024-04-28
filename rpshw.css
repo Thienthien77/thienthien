@@ -11,7 +11,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: grey;
     .icon-menu {
         display: none;
     }
@@ -26,41 +25,80 @@ header {
         }
     }
 }
-.container1 {
+.container {
     background-image: url(https://s3-alpha-sig.figma.com/img/f8c6/431f/722b3c16d835f15592384189052e8e65?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YtkyQ440QeDk8gpmmlhOB7Kor7w4EaBFGMIpXYp9CVB-BNgjqitfZ-TJmopj2-Libo~Djz9v0p8NCtLZc849HxbISI3u9FeX4ouTx-qglE-AUKWb81ah9VePsFTtWyP0yWOhRz8iNoUxIam7rfp6rV-F-M8DsepJSNuhF7WZ-KEQgpt0lW4TeYqIOkqMr-ewo-mUxRuox4dXIUFf5YxRrB1GJ-321PnyQFwjsejokAAj54xTdg8F8TcIKrwi2pCYK~Dfjo6GbAj1e2w-U3KFV13qImhYvVqyk1k62It33Qsn~DDei9D-SQUU~ceQR8z3fWX7I-IIlKN3qU-TpTZ~kA__);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 50vh;
-    display: grid;
-    padding: 80px;
-
-
-    
-    gap: 30px;
-    .box1 {
+    padding: 30px 40px 10px 80px;
+    display: grid; 
+   
+     .container-left {
         color: white;
-        hr {
-            width: 60%;
-        }
-        h4 {
-            margin-top: 20px;
-        }
-    }
-    .box2 {
-        background-color: white;
-        padding: 30px;
-        .box2-text {
+          h1 {
+           
+            font-size: 3rem;
+          }
+          p {
+            font-size: 1.5rem;
+            padding: 20px;
+            text-align: justify;
+          }
+          h4 {
+            padding: 20px;
+            font-size: 2rem;
+          }
+          .button {
+             display: flex;
+             padding: 20px;
+               .form-group {
+                 width: 60%;
+                  input {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 15px;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 1px solid white;
+                  }
+               }
+               button {
+                  margin-left: 30px;
+                  background-color: orange;
+                  color: white;
+                  padding: 10px 20px;
+                  border-radius: 15px;
+                  border: 1px solid white;
+               }
+          }
+     }
+     .container-right {
+        padding: 20px;
+        .box-header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            i {
-                margin-left: 10px;
+            h2 {
+                font-weight: bold;
             }
-            }
-            h3 {
-                color: rgba(255, 102, 0, 0.76);
-            }
+            .icon-header {
+                 font-size: 1.5rem;
+                 .fa-circle-left {
+                  color: orange;
+                 }
             }
         }
+        .travel {
+             .box {
+                h3 {
+                    color: orange;
+                    margin: 15px 0;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+             }
+        }
+     }
+ }
 .container2{
     width: 80%;
     margin: 0 auto;
@@ -95,8 +133,13 @@ header {
 }
 /* laptop */
 @media screen and (min-width: 1025px){
-    .container1 {
-        grid-template-columns: 3fr 1fr;
+    .container {
+        grid-template-columns: 3fr 2fr;
+        gap: 10%;
+        background-size: 100% 100%;
+        .container-right {
+            background-color: white;
+        }
     }
     .container2 {
       grid-template-columns: repeat(3,1fr);
@@ -111,6 +154,19 @@ header {
 
 /* tablet */
 @media screen and (min-width: 741px) and (max-width: 1024px){
+    .container {
+        background-size: 100% 60%;
+
+        .container-right {
+            margin-top: 50px;
+            .travel {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+        }
+
+    }
   .container2 {
       grid-template-columns: repeat(3,1fr);
     }
@@ -152,6 +208,27 @@ header {
       display: none;
     }
   }
+}
+.container {
+    background-size: 100% 57%;
+    padding: 10px;
+    .container-left {
+        text-align: center;
+        h4 {
+            font-size: 1.5rem;
+        }
+        .button {
+            flex-direction: column;
+            align-items: center;
+            .form-group {
+                width: 100%;             
+            }
+            button {
+               width: 40%;
+               margin-top: 15px;
+            }
+        }
+    }
 }
 .container3 {
   grid-template-areas:
