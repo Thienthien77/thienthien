@@ -99,12 +99,22 @@ header {
         }
      }
  }
-.container2{
+.container1{
     width: 80%;
     margin: 0 auto;
     margin-top: 50px;
-    display: grid;
-    gap: 15px;
+    .discovery {
+        margin-top: 10px;
+        display: grid;
+          .box {
+              .box-img {
+                  height: 120px;
+                  img {
+                    object-fit: cover;
+                  }
+              }
+          }
+    }
     .box-content {
         padding: 15px;
         border: 1px solid black;
@@ -115,21 +125,31 @@ header {
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
+   .photography {
     display: grid;
-    gap: 10px;
-    height: 500px;
-    .box1 {
-        grid-area: b1;
+    .photo-top {
+        .box {
+            position: relative;
+            color: white;
+            p{
+                position: absolute;
+                bottom: 20px;
+                left: 30px;
+            }
+            h1 {
+                position: absolute;
+                bottom: 60px;
+                left: 30px;
+            }
+
+        }
     }
-    .box2 {
-        grid-area: b2;
-    }
-    .box3 {
-        grid-area: b3;
-    }
-    .box4 {
-        grid-area: b4;
-    }
+      .box {
+        height: 300px;
+        margin-top: 20px;
+      }
+   }
+
 }
 /* laptop */
 @media screen and (min-width: 1025px){
@@ -141,14 +161,16 @@ header {
             background-color: white;
         }
     }
-    .container2 {
-      grid-template-columns: repeat(3,1fr);
+    .discovery {
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+
     }
-   .container3 {
-      grid-template-areas:
-      "b1 b1 b2"
-      "b3 b3 b4"
-      ;
+   .photography {
+    display: grid;
+     grid-template-columns: 2fr 1fr;  
+    gap: 20px;
+
    }
 }
 
@@ -167,10 +189,12 @@ header {
         }
 
     }
-  .container2 {
-      grid-template-columns: repeat(3,1fr);
+  .discovery {
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
     }
-    .container3 {
+    .photography {
+
       grid-template-areas:
       "b1 b1"
       "b3 b3"
@@ -229,6 +253,9 @@ header {
             }
         }
     }
+}
+.discovery {
+    gap: 10px;
 }
 .container3 {
   grid-template-areas:

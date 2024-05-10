@@ -1,9 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 img {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
-.navbar {
-background-image: url(https://s3-alpha-sig.figma.com/img/46a0/d217/c2bd7d5ef2cfc0e9c3123a65be598575?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QqGvXDkobD~Kk5RrYv4qTASQo6XB4jFMFzWzFlNliGNIhlCV5fO0AreHJQoJ6xroRuiiHD7WfEsMm9gwXt6LaCHdBN8M7b-levD8j7in9860A2Ag6wh4m3SWslfSufpqYyEAYSZR~v-DwXYj2okGE5gbr91xndR0HODD1II-8bf6aa1idznM8O43W6ys4mUKPdrWV8iOISU4flQeFt4uZY2WYrwgtJCz2dE0wWN4x7hQvu7Tiao2E2bXTWgT~6eb6u8c4AYivqcZsuGBvK7~SDVOV-S3oeIlG~LyR0t0zAXSFQ8qV~OUYwRdxKZlF3nC-YsFCZerm0O2BGSeYA6j4g__);
-background-repeat: no-repeat;
+.navbar-brand {
+    img {
+        height: 100px;
+    }
 }
+.navbar-nav {
+    margin: 0 !important;
+a {
+    color: white;
+}
+}
+.collapse {
+justify-content: end;
+}
+.active {
+    color: blue !important;
+}
+header {
+    background-image: url(./Boostrap5/63fb273526288776de39.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    .video {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        i {
+            position: absolute;
+            font-size: 100px;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            color: white;
+        }
+        }
+    }
+    main {
+        .how {
+     h1 {
+        text-align: center;
+     }
+     .step {
+        position: relative;
+        h3 {
+            position: absolute;
+            bottom: 30px;
+            left: 60px;
 
+        }
+        h5 {
+            position: absolute;
+            bottom: 10px;
+            left: 60px;
+        }
+     }
+        }
+        .meet {
+            .photo {
+                position: relative; 
+               text-align: center;
+                img {
+                    width: 50%;
+                    border-radius: 50%;                
+                 }
+                 i {
+                    position: absolute;
+                    bottom :10% ;
+                    right: 20%;
+                    background-color: red;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    padding: 10px;
+                    color: white;
+                    border: 2px solid white;
+                 }
+            }
+            .content {
+                text-align: center;
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+          
+        }
+    }
+ /* mobile */
+    @media screen and (max-width : 740px) {
+        .navbar-brand {
+            img {
+                height: 50px;
+            }
+        }
+        .navbar-toggler {
+            color: white !important;
+        }
+        .navbar-toggler-icon {
+            color: white !important;
+        }
+    }
