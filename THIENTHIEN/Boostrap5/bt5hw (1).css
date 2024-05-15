@@ -32,7 +32,7 @@ img {
 }
 
 header {
-    background-image: url(./Boostrap5/63fb273526288776de39.jpg);
+    background-image: url(../../Boostrap5/63fb273526288776de39.jpg);
     background-repeat: no-repeat;
     background-size: 100% 90%;
 
@@ -136,59 +136,73 @@ main {
             text-align: center;
         }
 
-        .block3 {
-            display: grid;
-
-            .photo1 {
-                position: relative;
+        .enjomet {
+            position: relative;
                 h3 {
                     position: absolute;
-                    bottom:180px;
-                    color: white;
-                    align-items: center;
-                    text-align: center;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: white;            
                 }
             }
         }
-    }
+    
     .our {
         h4 { text-align: center;}
         p { text-align: center; color: gray;}
-    
-    }
-    .Mark {
-        display: flex;
-        .content {
-            margin-top: 120px ;
-        }
-        i {
-           color: orange;
-        }
-    }
-    .form {
-        width: 60%;
-        margin: 0 auto;
-        display: flex;
-        .form-group {
-            padding: 15px;
-            border:2px;
-        }
-        button {
-            border-radius: 8px;
-            border: 2px solid rgb(86, 86, 241);
-            color: rgb(74, 74, 252);
-
-            &:hover {
-                background-color: blue;
+        .Mark {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .mark-img {
+                width: 128px;
+                height: 128px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+          .content {
+            margin-left: 20px;
+          }
+            .fa-regular {
+               color: orange;
             }
         }
-    }
-    
+        .form {
+           
+          input {
+            width: 100%;
+            padding: 5px;
+          
+          }
+            button {
+               padding: 5px;
+               width: 100%;
+            }
+        }
+    }  
 }
+footer {
+    background-color: rgb(11, 11, 114);
+    color: white;
+    list-style:  none;
+
+    .footer-logo {
+       img {
+           width: 178px;
+           height: 93px;
+       }
+    }
+    .end {
+        display: flex;
+        justify-content: space-between;
+    }
+       }
 /* laptop */
 @media screen and (min-width: 1025px) {
-    .block3 {}
-
+  
+}
     /* tablet */
     @media screen and (min-width: 741px) and (max-width: 1024px) {
         .block2 {}
