@@ -224,3 +224,9 @@ footer {
             color: white !important;
         }
     }
+    .red {
+        color: red !important;
+    }
+    .blue {
+        color: blue !important;
+    }
