@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <form action="https://www.youtube.com/">
+        <h1>Đăng Ký</h1>
+        <div class="container">
+            <div class="form-group">             
+                <input type="text" placeholder="Enter your Username">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter your Email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <label for="">Phone:</label> <br>
+                <input type="number" placeholder="Enter your Phone">
+            </div>
+            <div class="form-group">
+                <label for="">Password:</label> <br>
+                <input type="password" placeholder="Enter your Password">
+            </div>
+            <div class="form-group">
+                <label for="">Date:</label> <br>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label for="">Quốc Gia</label> <br>
+                <select>
+                    <option selected disabled>Vui lòng chọn quốc gia của bạn</option>
+                    <option>VietNam</option>
+                    <option>ThaiLan</option>
+                    <option>Myanmar</option>
+                    <option>Laos</option>
+                    <option>Cambodia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Sở thích:</label>
+                <input type="checkbox" >
+                <label for="">Play Game</label>
+                <input type="checkbox" >
+                <label for="">Reading</label>
+                <input type="checkbox" >
+                <label for="">Sleep</label>          
+            </div>
+            <div class="form-group">
+                <label for="">Giới tính:</label>
+                <input type="radio" name="gender">
+                <label for="">Nam</label>
+                <input type="radio" name="gender">
+                <label for="">Nữ</label>
+                <input type="radio" name="gender">
+                <label for="">Khác</label>          
+            </div>
+            <div class="form-group">
+                <label for="">Avatar:</label> <br>
+                <input type="file">
+            </div>
+        </div>
+         <div class="form-group">
+            <label for="">Nội dung:</label>
+            <textarea  rows="6"></textarea>
+         </div>
+        <div class="link">
+            <button>Send</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
